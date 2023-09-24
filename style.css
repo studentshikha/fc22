@@ -1,69 +1,229 @@
-.navbar {
-    position: sticky;
-    top: 0px;
-    background: #FFFDF8;
+* {
+  padding: 0;
+  margin: 0;
 }
-button{
-    background-color:#184655;
-    border-radius: 30px;
-    height:40px;
-    color: white;
-    font-size: 30px;
-    font-family: Roboto;
-    font-weight: 500;
-    text-align: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  /* list-style-type: none;
+  text-decoration: none; */
 }
-nav{
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    height: 87px;
-    width: 95vw;
+#nav-left {
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
 }
-.left,.cirle,.title, .right{
-display: flex;
- align-items: center; 
+#nav-left > img {
+  height: 50px;
 }
-.verticl-line{
-    border-left: 2px solid black;
-    height: 15px;
-    margin: 5px;
-    padding: 5px;
+#vertcal-line {
+  height: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.61);
+  padding-inline: 5px;
 }
-.container-1{
-    display: flex;
-    width:95vw;
-    background-color:#d0eae2;
-    border-radius: 15px;
-    margin: 10px;
-    height: 500px;
+#nav-left > p {
+  color: #373737;
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: 200;
 }
-.leftside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#nav-right {
+  display: flex;
+  padding-inline: 30px;
 }
-.container-2{
-    display: flex;
-    width:95vw;
-    background-color:#f2fcf1;
-    border-radius: 15px;
-    height: 300px;
-    border:1px solid black;
-    flex: 2;
-    margin: 10px;
+#nav-right > ul {
+  list-style-type: none;
+  display: flex;
 }
-#writer{
-    display: flex;
-    justify-content: space-between;
+#nav-right > ul > li > a {
+  text-decoration: none;
+  padding-inline: 5px;
+  color: #373737;
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 300;
 }
-.para{
-    padding: 10px;
-}
-#hand{
-    flex: 2;
-}
-.cards{
-    display: flex;
+#nav-right > ul > li {
+  display: flex;
 }
 
+#nav-right > button {
+  background: #184655;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 23.5px;
+  color: white;
+  padding: 5px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("./image/Rectangle 31.jpg");
+  margin-top: 30px;
+  border-radius: 50px;
+  margin: auto;
+  width: 95vw;
+  height: 742px;
+  margin-bottom: 30px;
+}
+#hero-left > h1 {
+  color: #184655;
+  font-size: 45px;
+  font-family: Poppins;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#list > ul {
+  list-style-type: none;
+  display: flex;
+}
+#list > ul > li {
+  /* display: flex; */
+  padding-inline: 20px;
+  color: #53748c;
+  font-size: 21px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+#hand {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("./image/Rectangle 31.jpg");
+  margin-top: 30px;
+  border-radius: 40px;
+  width: 95vw;
+  height: 500px;
+  margin: auto;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+#hand > img {
+  border-radius: 15px;
+  padding: 20px;
+  width: 50%;
+}
+#para {
+  padding: 10px;
+}
+#para > h1 {
+  color: #404040;
+  font-size: 32px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+#para > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#para > div > p {
+  color: rgba(110.5, 110.22, 110.22, 0.84);
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+#para > p {
+  color: #464343;
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  box-sizing: border-box;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  background: linear-gradient(
+    117deg,
+    rgba(248.63, 246.55, 246.55, 0.1) 0%,
+    rgba(249, 247, 247, 0.4) 100%
+  );
+  box-shadow: 0px 2px 20px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+}
+.card1 > img {
+  width: 100%;
+}
+#paragraph {
+  padding: 10px;
+}
+#paragraph > h1 {
+  color: #4a4848;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+#paragraph > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: rgba(110.5, 110.22, 110.22, 0.84);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+#paragraph > p {
+  color: #464343;
+  font-size: 16px;
+  font-family: Segoe UI;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+#paragraph > a {
+  text-decoration: none;
+  color: #213949;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 300;
+  text-align: right;
+}
+#last {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-image: url("./image/Rectangle 31.jpg");
+  margin-top: 30px;
+  border-radius: 50px;
+  margin: 30px;
+  width: 90vw;
+  height: 400px;
+  padding: 30px;
+}
+#paraa>p{
+    color: black;
+font-size: 40px;
+font-family: Roboto;
+font-weight: 300;
+margin-left: 50px;
+}
+#paraa>h1{
+color: black;
+font-size: 40px;
+font-family: Roboto;
+font-weight: 500;
+}
+#paraa >h6{
+    color: black;
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+#last>img{
+    width: 751.10px;
+     height: 397.27px
+}
